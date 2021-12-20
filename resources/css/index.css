@@ -12,10 +12,13 @@ p,
 li {
   font-size: 18px;
 }
+iframe:focus {
+  font-size: 500px;
+}
 
 
 a {
-  text-decoration: none;
+  text-decoration: none;]
 }
 
 body {
@@ -36,9 +39,10 @@ body {
 }
 #clock{
     font-family: sans-serif;
-    font-size:60px;
+    font-size:150px;
     text-shadow:0px 0px 1px #fff;
     color:#fff;
+    text-align: center;
 }
 #clock span {
     color:#888;
@@ -49,8 +53,13 @@ body {
     left:-10px;
 }
 #date {
-    letter-spacing:10px;
-    font-size:14px;
+    letter-spacing:4px;
+    font-size:26px;
     font-family:arial,sans-serif;
     color:#fff;
+}
+
+.current {
+    font-size: 150px;
+}
 }
