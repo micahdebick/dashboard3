@@ -15,15 +15,15 @@
     hr = checkTime(hr);
     min = checkTime(min);
     sec = checkTime(sec);
-    document.getElementById("clock").innerHTML = hr + ":" + min + " " + ap;
+    document.getElementById("clock").innerHTML = hr + ":" + min;
     
     var months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
-    var days = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+    var days = ['Sunday', 'Monday', 'Tuesday', 'Wedmesday', 'Thursday', 'Friday', 'Saturday'];
     var curWeekDay = days[today.getDay()];
     var curDay = today.getDate();
     var curMonth = months[today.getMonth()];
     var curYear = today.getFullYear();
-    var date = curWeekDay+", "+curDay+" "+curMonth;
+    var date = curWeekDay+", "+curMonth + " " +curDay;
     document.getElementById("date").innerHTML = date;
     
     var time = setTimeout(function(){ startTime() }, 500);
@@ -45,7 +45,11 @@ function checkTime(i) {
 </div>
 </body>
 <body>
-	<a class="weatherwidget-io" href="https://forecast7.com/en/36d44n87d40/antioch/?unit=us" data-label_1="ANTIOCH" data-label_2="WEATHER" data-icons="Climacons" data-theme="dark" data-suncolor="#ffffff" data-cloudcolor="#c3c3c3" data-raincolor="#e0e0e0" >ANTIOCH WEATHER</a>
+<a class="weatherwidget-io" href="https://forecast7.com/en/36d44n87d40/antioch/?unit=us" data-font="Arial" data-icons="Climacons" data-mode="Current" data-days="5" data-theme="dark" data-suncolor="#ffffff" data-cloudcolor="#c3c3c3" data-raincolor="#e0e0e0" >ANTIOCH WEATHER</a>
+<script>
+!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+</script>
+<a class="weatherwidget-io" href="https://forecast7.com/en/36d44n87d40/antioch/?unit=us" data-font="Arial" data-icons="Climacons" data-mode="Forecast" data-days="5" data-theme="dark" data-suncolor="#ffffff" data-cloudcolor="#c3c3c3" data-raincolor="#e0e0e0" >ANTIOCH WEATHER</a>
 <script>
 !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
 </script>
